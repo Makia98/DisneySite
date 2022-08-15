@@ -58,3 +58,23 @@ h1 {
 h2 {
     text-align: center;
 }
+
+.princesses ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.princesses div {
+    text-align: center;
+}
+
+.princesses a:link {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-family: Lucida Bright, serif;
+}
+
+.princesses img {
+    border-radius: 8px;
+}
