@@ -1,12 +1,16 @@
-body {
-    margin: 0;
+.content {
+    padding: 16px;
 }
 
 nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
     list-style-type: none;
+    width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #ffc0cb;
 }
 
@@ -35,13 +39,13 @@ nav li a:hover {
     background-color: #ffafcc;
 }
 
+nav #wikihometitle:not(.nohover) {
+    background-color: #ffc0cb;
+}
+
 #wikihometitle {
     font-weight: bolder;
     font-size: large;
-}
-
-nav #wikihometitle:not(.nohover) {
-    background-color: #ffc0cb;
 }
 
 .center {
@@ -53,10 +57,12 @@ nav #wikihometitle:not(.nohover) {
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 h2 {
     text-align: center;
+    font-size: 50px;
 }
 
 .princesses ul {
@@ -77,4 +83,31 @@ h2 {
 
 .princesses img {
     border-radius: 8px;
+}
+
+.princesses {
+    background-color: #ffc0cb;
+}
+
+body {
+    font-family: Lucida Bright, serif;
+}
+
+#princessestitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+
+#navbar {
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
 }
